@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    background-color: black;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    gap: 20px;
+    color: white;
+}
+
+.container .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    background-color: white;
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+.container .inputs .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.container .inputs .buttons button {
+    background-color: red;
+    color: white;
+    width: 85px;
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+}
+
+.resetted {
+    color: white;
+    background-color: red;
+}
+
+.inner-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.card {
+    color: white;
+    transform: translateY(0px);
+    transform: scale(100%);
+    transition: 0.3s;
+    background-size: cover;
+    width: 160px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    transform: scale(105%);
+    transition: 0.3s;
+}
+
+.card h4 {
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+.poster {
+    width: 150px;
+    height: 200px;
+}

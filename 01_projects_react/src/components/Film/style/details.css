@@ -1,0 +1,25 @@
+.choosen {
+    display: flex;
+    margin: 50px;
+    padding: 20px;
+    gap: 20px;
+    border: white 1px solid;
+}
+
+.choosen-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 300px;
+}
+
+.choosen-data div {
+    margin-top: 10px;
+}
+
+button {
+    background-color: red;
+    padding: 10px;
+    border: none;
+    color: white;
+}
