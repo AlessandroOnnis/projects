@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useFetchData } from "../../useFetchData";
 import { Link, Outlet } from "react-router-dom";
 import { Wrapper } from "../../GeneralComponents/Wrapper";
-import { Card } from "../../GeneralComponents/Card";
+import { ProductCard } from "../Products/ProductCard";
 import './../style/list.scss'
 
 export function FilmList({ placeholder, redirect, argument }) {
@@ -42,7 +42,7 @@ export function FilmList({ placeholder, redirect, argument }) {
                 <Wrapper chooseClass extClass={"inner-container"}>
                     {data && data.Search.map((item, index) =>
                         item.Poster !== 'N/A' &&
-                        <Card 
+                        <ProductCard 
                             type={'card'}
                             key={index}
                             endpoint={'/film/'+item.imdbID}

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useFetchData } from "../../useFetchData";
 import { Link, Outlet } from "react-router-dom";
-import { Card } from "../../GeneralComponents/Card";
+import { ProductCard } from "../Products/ProductCard";
 import { Wrapper } from "../../GeneralComponents/Wrapper";
 
 export function FoodList({ placeholder, redirect, argument }) {
@@ -41,7 +41,7 @@ export function FoodList({ placeholder, redirect, argument }) {
                 <Wrapper chooseClass extClass={"inner-container"}>
                     {data && data.meals.map((item, index) =>
                         item.strMealThumb !== 'N/A' &&
-                        <Card
+                        <ProductCard
                             type={'card-b'}
                             key={index}
                             endpoint={/food/+item.idMeal}

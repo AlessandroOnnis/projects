@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export function Card({type, endpoint, img, title, posterType}) {
+export function ProductCard({type, endpoint, img, title, posterType}) {
     return (
         <div className={type}>
             <Link to={endpoint}>
