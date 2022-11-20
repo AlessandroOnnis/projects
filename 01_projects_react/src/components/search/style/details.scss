@@ -1,0 +1,16 @@
+.product-choosen {
+    width: 980px;
+    display: flex;
+    margin: 50px;
+    gap: 20px;
+    border: rgb(63, 63, 63) 1px solid;
+    padding: 20px;
+    .product-image{
+        width: 400px;
+        height: 400px;
+        .product-data div {
+            width: 500px;
+            margin-top: 10px;
+        }
+    }
+}

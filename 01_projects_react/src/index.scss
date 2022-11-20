@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+html{
+    background-color: white;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+}
+
+.wrapperC{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu{
+    width: 100%;
+    padding-left: 20px;
+    display: flex;
+    background: #ff8214;
+}
+
+.navigator {
+    width: 100px;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: white;
+    &:hover {
+        background-color: rgb(62, 62, 62);
+        color: red;
+    }
+}

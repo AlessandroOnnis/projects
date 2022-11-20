@@ -1,11 +1,12 @@
 import { useEffect } from "react"
-import { useFetchData } from "./../useFetchData"
+import { useFetchData } from "../../useFetchData"
 import { useParams } from "react-router-dom"
-import './style/details.css'
+import { Wrapper } from "../../GeneralComponents/Wrapper"
+import './../style/details.scss'
 
-export function Details() {
+export function FilmDetails() {
     const { id } = useParams()
-    const { data, fetchData } = useFetchData(id, true)
+    const { data, fetchData } = useFetchData(id, true, 'film')
 
     useEffect(() => {
         fetchData()
@@ -13,9 +14,9 @@ export function Details() {
 
     return (
         data &&
-        <div className="choosen">
+        <div className="product-choosen">
             <img src={data.Poster} alt={`${data.Title} poster`} />
-            <div className="choosen-data">
+            <Wrapper extClass={"product-data"}>
                 <div>
                     <h1 style={{ color: 'red' }}>{data.Title}</h1>
                     <h3>Year: {data.Year}</h3>
@@ -25,7 +26,7 @@ export function Details() {
                     <p>{data.Plot}</p>
                     <p>Country: {data.Country}</p>
                 </div>
-            </div>
+            </Wrapper>
         </div>
     )
 }
