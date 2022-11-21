@@ -5,6 +5,7 @@ import { FoodList } from './components/search/Food/FoodList';
 import { Wrapper } from './components/GeneralComponents/Wrapper';
 import { Menu } from './components/GeneralComponents/Menu';
 import { Navigator } from './components/GeneralComponents/Navigation';
+import { HomePage } from './components/HomePage';
 function App() {
 
     return (
@@ -17,7 +18,7 @@ function App() {
                         <Navigator link={'/food/'} text={'Food'} />
                     </Menu>
                     <Routes>
-                        <Route path='/'/>
+                        <Route path='/' element={<HomePage/>} />
                         <Route path="/film/" element={
                             <FilmList
                                 argument='film'

@@ -44,3 +44,55 @@ html{
         color: red;
     }
 }
+.carousel-container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 15px;
+    gap: 10px;
+    .carousel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 50px;
+    }
+    button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        width: 30px;
+        height: 30px;
+        background: rgb(62, 62, 62, .2);
+        border-radius: 25px;
+        padding: 10px;
+        cursor: pointer;
+        .arrow {
+            border: solid #ff8214;
+            border-width: 0 4px 4px 0;
+            display: inline-block;
+            padding: 3px;
+          }
+          .right {
+            transform: rotate(-45deg);
+          }
+          
+          .left {
+            transform: rotate(135deg);
+          }
+    }
+}
+
+.littleCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ff8214;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    height: 150px;
+    gap: 5px;
+}
